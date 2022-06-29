@@ -1,0 +1,36 @@
+/* css selectors look like this a { background-color: yellow; }
+ in the example above the selector is "a" which as we learned in the html crash course is a link, however when we use a selector it will target all the links -in this case- everywhere unless we use a class or an ID. 
+ to start the declaration we have an opening curly brace { and to close it we have a closing curly brace } 
+ inside the braces we have a property and a value, the property in this case will be "background-color" and the value is "yellow" seperated by a colon and you always want to end it with a colon ;*/
+
+ /* colors in css can be written as 
+ color names = black, blue, yellow...
+ html5 color names = coral, misty rose...
+ hexadecimal = #00ff00, #f4f4f4...
+ rgb = (0,0,0) (0,0,255) */
+
+ /* Differences between class and ID.
+  As far as the browser goes in enforcing rules, ID and class theres no difference when it comes to html and css but we want to think of IDs as IDs that arent going to be placed anywhere else, theyre going to be unique. So if you have something like a nav bar you'll give it the ID of nav-bar bc you wont be using that in any other element. But if youre using somehting like class-box1 where youll give it like a background color and a border and stuff like that you may use that class somewhere else bc you may want to apply that style, so its not unique. To target a class we use a dot "." */
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* same as above */
+    font: normal 16px Arial, Helvetica, sans-serif;
+
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.box-1{
+    background-color: #333;
+    color: #fff;
+}
