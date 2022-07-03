@@ -11,6 +11,34 @@
 
  /* Differences between class and ID.
   As far as the browser goes in enforcing rules, ID and class theres no difference when it comes to html and css but we want to think of IDs as IDs that arent going to be placed anywhere else, theyre going to be unique. So if you have something like a nav bar you'll give it the ID of nav-bar bc you wont be using that in any other element. But if youre using somehting like class-box1 where youll give it like a background color and a border and stuff like that you may use that class somewhere else bc you may want to apply that style, so its not unique. To target a class we use a dot "." */
+
+  /* when dealing with containers its almost always better to use percentages other than pixels because of how the browser will respond to it */
+
+  /* margin and padding both have to do with space around content. Padding is the space inside the border around the content. Border is just a border that goes around the content. Margin is the space outside of the border. There are 2 ways to add margin and padding, the long way and the short way in the example we'll be adding margin to a paragraph <p>
+    p{
+        margin-top:5px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+the example above can also be written as 
+    p{
+        margin: 5px 10px 5px 10px;
+    }
+top right bottom left is the order for "shorthand"
+    p{
+        margin: 5px 10px;
+    }
+to make it even shorter if the top and bottom have the same size and so does the left and right we can just use the top/bottom together and right/left together 
+
+The same thing can be done for padding*/
+
+/* browsers usually have their default margin and padding but it can be 0d out using the asterisk command which is a universal thing. Its called a reset 
+*{
+    margin: 0;
+    padding: 0;
+}*/
+
 body{
     background-color: #f4f4f4;
     color: #555555;
@@ -33,4 +61,27 @@ body{
 .box-1{
     background-color: #333;
     color: #fff;
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    /* same as above */
+    border-width: 3px;
+    border-bottom-width: 10px;
+
+    border-top-style: dotted;
+
+    border: 5px red solid;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    /* same as above */
+    padding: 20px;
+
+    margin-top: 20px;
+    margin: 20 px 0;
 }
+
