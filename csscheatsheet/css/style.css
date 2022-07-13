@@ -39,6 +39,14 @@ The same thing can be done for padding*/
     padding: 0;
 }*/
 
+/* Positioning in CSS, the positioning property has a few different values...
+Static - The default if we dont assign a position its static and just appears in the document flow
+Relative - The element is palced relative to its normal position so it falls naturally but we can add properties like top left right bottom and we can push it to where we want
+Absolute - Will allow us to target whatever position we want inside of a relative element
+Fixed - A fixed position to the browser window so it doesnt matter how much we scroll or how far we are ina page it will always be in the same position 
+Initial - Sets the property to its default value 
+Inherit - Will inherit whatever the property of its parent element is*/
+
 body{
     background-color: #f4f4f4;
     color: #555555;
@@ -195,4 +203,49 @@ a:visited{
     color: #fff;
     padding: 15px;
     box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../images/bgimage.jfif');
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center center;
+}
+
+.p-box h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child {
+    background: red;
+}
+
+.my-list li:last-child {
+    background: blue;
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: gray;
 }
